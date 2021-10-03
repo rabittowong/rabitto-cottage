@@ -3,7 +3,7 @@ import { Router } from '@angular/router';
 
 import { IngredientModel } from '../model/ingredient.model';
 import { ingredientSampleData } from '../data/ingredient.data';
-import { dialogSampleDate } from '../data/dialog.data';
+import { dialogSampleData } from '../data/dialog.data';
 
 @Component({
   templateUrl: './ingredient-content.component.html',
@@ -11,7 +11,7 @@ import { dialogSampleDate } from '../data/dialog.data';
 })
 export class IngredientContentComponent implements AfterViewInit {
   ingredients: IngredientModel[] = ingredientSampleData;
-  dialogs: string[] = dialogSampleDate;
+  dialogs: string[] = dialogSampleData;
 
   constructor(private router: Router) {
   }

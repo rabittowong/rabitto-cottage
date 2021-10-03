@@ -1,1 +1,23 @@
-<div id="shiki-garden-map">Shiki garden map</div>
+<div id="shiki-garden-map">
+  <div class="content">
+    <div class="content-body">
+      <div>為了避免腳本過於繁重, 設定裏並沒列上所有討伐地的座標。</div>
+      <div>如果想指定討伐地, 請於討伐地設定(第7-32行)內貼上:</div>
+    </div>
+
+    <div class="content-body">
+      <div>Call click_point({{cursorOffsetX}}, {{cursorOffsetY}})</div>
+    </div>
+  </div>
+
+  <div class="map-container" (mousemove)="onCursorMove($event)" (mouseout)="onCursorOut()">
+    <img src="assets/img/shiki-map{{mapIndex}}.jpg" alt="shiki-map">
+    <div class="btn-container">
+      <div class="btn" (click)="onChangeMap(1)"></div>
+      <div class="btn" (click)="onChangeMap(2)"></div>
+      <div class="btn" (click)="onChangeMap(3)"></div>
+      <div class="btn" (click)="onChangeMap(4)"></div>
+      <div class="btn" (click)="onChangeMap(5)"></div>
+    </div>
+  </div>
+</div>

@@ -15,8 +15,7 @@ export class GistContentComponent implements AfterViewInit {
 
   ngAfterViewInit() {
     this.iframe.nativeElement.id = 'gist-' + this.gistId;
-
-    const doc = this.iframe.nativeElement.contentDocument;
+    const doc = this.iframe.nativeElement.contentDocument || this.iframe.nativeElement.contentElement.contentWindow;
     const content = `
       <html>
         <head>
@@ -27,7 +26,6 @@ export class GistContentComponent implements AfterViewInit {
         </body>
       </html>
     `;
-
     doc.open();
     doc.write(content);
     doc.close();

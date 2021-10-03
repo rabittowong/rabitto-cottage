@@ -1,1 +1,31 @@
-<div id="shiki-garden-character">Shiki garden character</div>
+<div id="shiki-garden-character">
+  <div class="summon-img"></div>
+
+  <div class="content">
+    <div class="content-body">
+      <div>這裡是式姬們的表情包合集</div>
+      <div>在圖片上右鍵點撃"圖片另存新檔"可以儲存至本地電腦</div>
+    </div>
+
+    <div class="content-body">最後更新日期: 3 October, 2021</div>
+  </div>
+
+  <div class="grid">
+    <div class="rank-selector">
+      <div *ngFor="let rank of ranks" class="rank-item" (click)="onSelectRank(rank)">{{rank}}</div>
+    </div>
+
+    <div class="character-container">
+      <div *ngFor="let character of characters; let i = index" class="character">
+        <div class="name">{{character.name}}</div>
+        <div class="emotion-container">
+          <img *ngFor="let emotion of character.emotions; let j = index" src="https://www.shikihime-project.com{{emotion}}" alt="character-{{i}}-{{j}}">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="content-body">式姬表情包來源: <a href="https://www.shikihime-project.com/">式姬Project</a></div>
+  </div>
+</div>

@@ -1,4 +1,4 @@
-export const dialogSampleDate: string[] = [
+export const dialogSampleData: string[] = [
   '別用那種眼神望着小兔(抱兔耳',
   '嗚~ 小兔不好吃(抱頭蹲',
   '為什麼按這個按鈕! 你打算幹嘛!',

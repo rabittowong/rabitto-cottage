@@ -4,3 +4,47 @@
 #shiki-garden-character {
   margin: 15px;
 }
+
+.summon-img {
+  background: url('../../assets/img/summon.jpg') no-repeat;
+  height: 185px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 96px auto;
+
+  .rank-item {
+    width: 96px;
+    height: 32px;
+    line-height: 30px;
+    text-indent: 10px;
+    margin-bottom: -1px;
+    border: 1px solid black;
+    background-color: #F5F5F5;
+    transition-duration: 0.1s;
+
+    &:hover {
+      background-color: #dddddd;
+      cursor: pointer;
+    }
+  }
+
+  .character-container {
+    margin: 0 15px;
+  }
+
+  .character {
+    margin-bottom: 20px;
+  }
+
+  .name {
+    margin-bottom: 6px;
+    font-weight: bold;
+  }
+
+  img {
+    margin-right: 4px;
+    height: 86px;
+  }
+}

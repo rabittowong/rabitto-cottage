@@ -4,3 +4,27 @@
 #shiki-garden-map {
   margin: 15px;
 }
+
+.map-container {
+  height: 560px;
+  width: 760px;
+  margin-left: 15px;
+  position: relative;
+}
+
+.btn-container {
+  position: absolute;
+  top: 530px;
+  left: 250px;
+
+  .btn {
+    width: 30px;
+    height: 24px;
+    cursor: pointer;
+    margin-right: 6px;
+  }
+
+  .btn:first-of-type {
+    margin-right: 7px;
+  }
+}
