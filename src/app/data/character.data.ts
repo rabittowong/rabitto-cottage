@@ -1,6 +1,6 @@
 import { CharacterModel } from '../model/character.model';
 
-export const characterSampleData: CharacterModel[] = [
+export const characterData: CharacterModel[] = [
   {
     name: '小烏丸',
     rank: '基本',

@@ -1,4 +1,4 @@
-export const rankSampleData: string[] = [
+export const rankData: string[] = [
   '基本',
   '基亞',
   '上級',

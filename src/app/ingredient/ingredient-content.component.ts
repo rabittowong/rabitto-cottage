@@ -2,16 +2,16 @@ import { AfterViewInit, Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 import { IngredientModel } from '../model/ingredient.model';
-import { ingredientSampleData } from '../data/ingredient.data';
-import { dialogSampleData } from '../data/dialog.data';
+import { ingredientData } from '../data/ingredient.data';
+import { dialogData } from '../data/dialog.data';
 
 @Component({
   templateUrl: './ingredient-content.component.html',
   styleUrls: ['./ingredient-content.component.scss'],
 })
 export class IngredientContentComponent implements AfterViewInit {
-  ingredients: IngredientModel[] = ingredientSampleData;
-  dialogs: string[] = dialogSampleData;
+  ingredients: IngredientModel[] = ingredientData;
+  dialogs: string[] = dialogData;
 
   constructor(private router: Router) {
   }

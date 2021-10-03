@@ -1,6 +1,6 @@
 import { IngredientModel } from '../model/ingredient.model';
 
-export const ingredientSampleData: IngredientModel[] = [
+export const ingredientData: IngredientModel[] = [
   {
     name: "野兔肉",
     amount: "500克",
