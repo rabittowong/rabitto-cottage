@@ -5,6 +5,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./shiki-garden-script.component.scss'],
 })
 export class ShikiGardenScriptComponent {
+  isRecordHidden: boolean = true;
+
   constructor() {
   }
 }

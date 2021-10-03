@@ -9,6 +9,7 @@ import { AboutUsModule } from './about-us/about-us.module';
 import { ShikiGardenModule } from './shiki-garden/shiki-garden.module';
 import { DrawingModule } from './drawing/drawing.module';
 import { IngredientModule } from './ingredient/ingredient.module';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { IngredientModule } from './ingredient/ingredient.module';
     ShikiGardenModule,
     DrawingModule,
     IngredientModule,
+    SharedModule,
   ],
   providers: [],
   bootstrap: [

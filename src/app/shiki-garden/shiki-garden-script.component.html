@@ -1,1 +1,110 @@
-<div id="shiki-garden-script">Shiki garden script</div>
+<div id="shiki-garden-script">
+  <div class="content">
+    <div class="content-header">自動討伐程序 v3.20</div>
+    <div class="content-body">
+      <div>最後更新: 11 August, 2016</div>
+      <div>測試瀏覽器: Firefox 47.0</div>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="content-header">腳本功能</div>
+    <div class="content-body">
+      <div>1. 討伐 - 根據選擇的地圖與難度循環討伐</div>
+      <div>2. 賣札牌 - 討伐地圖達一定回數時退回庭園賣卡</div>
+      <div>3. 買基本符 - 當文超過100萬時購入基本符</div>
+      <div>4. 補充AP - AP不足時自動使用行動藥(使用順序: 20AP->50AP->80AP)</div>
+      <div>5. 補充HP - HP不足時自動使用神酒瓶(HP只會在進入討伐地時檢查)</div>
+      <div>6. 刷經驗筆 - 刷指定數量的經驗筆(注意: 與一弓箭之類的掉落也會計算在內)</div>
+      <div>7. 刷活動物品 - 補充AP時同時換取試練活動裏指定行數的物品</div>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="content-header">注意事項</div>
+    <div class="content-body">
+      <div>1. 腳本開始時需待在庭園/地圖上才能抓到座標</div>
+      <div>2. 建議持有充足的行動藥</div>
+      <div>3. 建議持有少量的神酒瓶</div>
+      <div>4. 此腳本並不相容IE跟Google Chrome</div>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="content-header">更新記錄</div>
+    <div class="content-body">
+      <div>3.20</div>
+      <div>- 新增討伐活動地圖功能</div>
+      <div>- 修訂基本符位置</div>
+    </div>
+    <div class="content-body">
+      <span class="pointer" (click)="isRecordHidden = !isRecordHidden">[點我查看以往更新記綠]</span>
+    </div>
+
+    <div *ngIf="!isRecordHidden">
+      <div class="content-body">
+        <div>3.19</div>
+        <div>- 優化整體腳本</div>
+        <div>- HP改為自動檢查</div>
+        <div>- 新增檢測討伐地已達回數上限功能</div>
+        <div>- 修復買基本符時有可能卡住的問題</div>
+        <div>- 修復經驗筆事件的判定問題</div>
+      </div>
+      <div class="content-body">
+        <div>3.18</div>
+        <div>- 優化買基本符程序</div>
+        <div>- 取消選擇討伐隊功能</div>
+      </div>
+      <div class="content-body">
+        <div>3.17</div>
+        <div>- 優化買基本符程序</div>
+        <div>- 修復文過高時無法賣卡的問題</div>
+        <div>- 新增換領活動物品功能</div>
+      </div>
+      <div class="content-body">
+        <div>3.16</div>
+        <div>- 修正AP能設定成60%以上的錯誤</div>
+        <div>- 新增刷經驗筆功能</div>
+      </div>
+      <div class="content-body">
+        <div>3.15</div>
+        <div>- 修復會在連續登入獎勵卡住的問題</div>
+        <div>- 新增圖5地圖</div>
+        <div>- 新增討伐後再挑戰功能</div>
+      </div>
+      <div class="content-body">
+        <div>3.14</div>
+        <div>- 修復選擇隊伍時重設難度的問題</div>
+        <div>- 修復遇到亂入怪時無法返回庭園的問題</div>
+        <div>- 降低防卡檢查的觸發時間</div>
+      </div>
+      <div class="content-body">
+        <div>3.13</div>
+        <div>- 修復買卡後無法返回庭園的問題</div>
+        <div>- 修復防卡檢查時無法關閉雜貨屋的問題</div>
+      </div>
+      <div class="content-body">
+        <div>3.12</div>
+        <div>- 改善腳本防卡設置</div>
+        <div>- 修復無法進入曜日討伐地的問題</div>
+        <div>- 修復無法選擇地圖的問題</div>
+        <div>- 修復無法選擇隊伍的問題</div>
+      </div>
+      <div class="content-body">
+        <div>3.11</div>
+        <div>- 優化整體腳本</div>
+        <div>- 新增黃泉平坂地圖(1-20F)</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="content-body">
+      <div>下面為討伐金階黑煙的範本, 可按需要更改程序設定</div>
+    </div>
+  </div>
+
+  <div class="gist-container">
+    <gist [gistId]="'rabittowong/72000665f4c0ab472ef742e4e72f3e1c'"></gist>
+  </div>
+</div>

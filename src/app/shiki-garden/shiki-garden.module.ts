@@ -6,6 +6,7 @@ import { ShikiGardenScriptComponent } from './shiki-garden-script.component';
 import { ShikiGardenMapComponent } from './shiki-garden-map.component';
 import { ShikiGardenCharacterComponent } from './shiki-garden-character.component';
 import { routes } from './shiki-garden.routes';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { routes } from './shiki-garden.routes';
   imports: [
     RouterModule.forChild(routes),
     CommonModule,
+    SharedModule,
   ],
   providers: [],
 })
