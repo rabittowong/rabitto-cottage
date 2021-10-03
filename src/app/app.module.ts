@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { TemplateModule } from './template/template.module';
 import { HomeModule } from './home/home.module';
 import { AboutUsModule } from './about-us/about-us.module';
+import { ShikiGardenModule } from './shiki-garden/shiki-garden.module';
+import { DrawingModule } from './drawing/drawing.module';
+import { IngredientModule } from './ingredient/ingredient.module';
 
 @NgModule({
   declarations: [
@@ -17,6 +20,9 @@ import { AboutUsModule } from './about-us/about-us.module';
     TemplateModule,
     HomeModule,
     AboutUsModule,
+    ShikiGardenModule,
+    DrawingModule,
+    IngredientModule,
   ],
   providers: [],
   bootstrap: [
