@@ -1,0 +1,17 @@
+<div id="header">
+  <div class="header-img"></div>
+  <ul class="nav-bar">
+    <li [routerLinkActive]="'active'" [routerLink]="['/']">主頁</li>
+    <li [routerLinkActive]="'active'" [routerLink]="['/about-us']">關於小兔</li>
+    <li>
+      <div>式姬之庭</div>
+      <ul class="nav-bar-second">
+        <li [routerLinkActive]="'active'" [routerLink]="['/shiki-garden/script']">討伐腳本</li>
+        <li [routerLinkActive]="'active'" [routerLink]="['/shiki-garden/map']">地圖坐標</li>
+        <li [routerLinkActive]="'active'" [routerLink]="['/shiki-garden/character']">素材</li>
+      </ul>
+    </li>
+    <li [routerLinkActive]="'active'" [routerLink]="['/drawing']">隨筆</li>
+    <li class="not-allowed" [routerLinkActive]="'active'" [routerLink]="['/ingredient']">兔子料理</li>
+  </ul>
+</div>

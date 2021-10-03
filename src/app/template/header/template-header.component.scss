@@ -1,0 +1,56 @@
+@import './../../../assets/scss/variables';
+@import './../../../assets/scss/mixin';
+
+#header {
+  padding-top: 15px;
+}
+
+.header-img {
+  background: url('../../../assets/img/header.jpg');
+  height: 150px;
+  margin: 0 15px;
+}
+
+.nav-bar {
+  margin: 20px 15px;
+  padding: 0;
+  height: 32px;
+  list-style-type: none;
+  display: flex;
+
+  li {
+    position: relative;
+    display: block;
+    margin-right: 15px;
+    text-indent: 10px;
+    border: 1px solid #d86c50;
+    border-radius: 2px;
+    background-color: #f5f5f5;
+    color: #d86c50;
+    width: 96px;
+    height: 32px;
+    line-height: 30px;
+    transition-duration: 0.15s;
+
+    &:hover {
+      background: #F3D2CA;
+      cursor: pointer;
+    }
+
+    &:hover.not-allowed {
+      cursor: not-allowed;
+    }
+
+    &:hover > .nav-bar-second {
+      display: block;
+    }
+
+    .nav-bar-second {
+      padding: 0;
+      display: none;
+      position: absolute;
+      top: 31px;
+      left: -1px;
+    }
+  }
+}

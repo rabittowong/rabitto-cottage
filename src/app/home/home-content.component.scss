@@ -1,0 +1,12 @@
+@import './../../assets/scss/variables';
+@import './../../assets/scss/mixin';
+
+#home {
+  margin: 15px;
+}
+
+.rabbit-in-cup {
+  background: url('../../assets/img/rabbit-in-cup.jpg') no-repeat;
+  background-size: contain;
+  height: 304px;
+}
