@@ -1,1 +1,12 @@
-<div id="drawing">Drawing</div>
+<div id="drawing">
+  <div class="grid">
+    <div class="drawing-selector">
+      <div *ngFor="let filename of filenames; let i = index" class="preview-container {{(selectedIndex == i) ? 'active' : 'non-active'}}" (click)="onChangeSelectedIndex(i)">
+        <img src="assets/img/drawing/{{filename}}" alt="drawing-{{i}}">
+      </div>
+    </div>
+    <div class="file-container">
+      <img src="assets/img/drawing/{{filenames[selectedIndex]}}" alt="drawing-file">
+    </div>
+  </div>
+</div>

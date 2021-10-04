@@ -4,3 +4,43 @@
 #drawing {
   margin: 15px;
 }
+
+.grid {
+  display: grid;
+  grid-template-columns: 66px auto;
+
+  .preview-container {
+    height: 66px;
+    width: 66px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &::after {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border: 1px solid #d86c50;
+      content: '';
+    }
+
+    &.non-active::after {
+      background-color: #f3d2ca;
+      opacity: 0.5;
+    }
+
+    img {
+      height: 66px;
+    }
+  }
+
+  .file-container {
+    margin: 0 15px;
+  }
+}
