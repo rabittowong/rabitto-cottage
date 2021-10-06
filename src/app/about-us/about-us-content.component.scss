@@ -2,5 +2,35 @@
 @import './../../assets/scss/mixin';
 
 #about-us {
-  margin: 15px;
+  margin: 15px 20px;
+}
+
+.grid {
+  margin: 6px 0 15px 0;
+  display: grid;
+  grid-template-columns: 100px auto;
+
+  .avatar {
+    width: 100px;
+  }
+
+  .detail-container {
+    margin: 0 15px;
+  }
+
+  .detail {
+    margin-bottom: 6px;
+  }
+
+  .detail > tr > th {
+    width: 36px;
+  }
+
+  .skill {
+    font-weight: bold;
+  }
+
+  .skill-remark {
+    margin-bottom: 6px;
+  }
 }

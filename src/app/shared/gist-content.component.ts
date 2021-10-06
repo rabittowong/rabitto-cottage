@@ -21,7 +21,7 @@ export class GistContentComponent implements AfterViewInit {
         <head>
           <base target="_parent">
         </head>
-        <body onload="parent.document.getElementById('${this.iframe.nativeElement.id}')">
+        <body onload="parent.document.getElementById('${this.iframe.nativeElement.id}')" style="margin: 0;">
           <script type="text/javascript" src="https://gist.github.com/${this.gistId}.js"></script>
         </body>
       </html>

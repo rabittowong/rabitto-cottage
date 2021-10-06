@@ -1,1 +1,55 @@
-<div id="about-us">About us</div>
+<div id="about-us">
+  <div class="content">
+    <div class="content-body">
+      <div>平安時代，大量妖魔鬼怪憑空降世。</div>
+      <div>桓武天皇將各令制國軍團廢除，促使列島陷入戰亂頻繁的局面。</div>
+      <div>至此過了三年，人類在能控制式神的陰陽師找到了對抗妖怪的最後希望。</div>
+      <div>當中一名陰陽師橫空出世，戰績冠絕群倫，其名為熾小兔。</div>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="content-header">式神</div>
+    <div class="content-body">
+      <div *ngFor="let shiki of shikis; let i = index" class="section">
+        <div>{{shiki.name}} (種族: {{shiki.race}})</div>
+        <div class="grid">
+          <img class="avatar" src="assets/img/{{shiki.avatar}}" alt="rabitto-shiki-{{i}}">
+          <div class="detail-container">
+            <table class="detail">
+              <tr>
+                <th>生命</th>
+                <th>攻擊</th>
+                <th>防禦</th>
+                <th>速度</th>
+                <th>回復</th>
+              </tr>
+              <tr>
+                <td>{{shiki.health}}</td>
+                <td>{{shiki.attack}}</td>
+                <td>{{shiki.defense}}</td>
+                <td>{{shiki.speed}}</td>
+                <td>{{shiki.regen}}</td>
+              </tr>
+            </table>
+            <div>
+              <div class="skill">{{shiki.skill1}}</div>
+              <div class="skill-remark">{{shiki.skill1Remark}}</div>
+              <div class="skill">{{shiki.skill2}}</div>
+              <div class="skill-remark">{{shiki.skill2Remark}}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="content-header">成就</div>
+    <div class="content-body">
+      <div>1. 兔子大福同盟盟主，於百鬼夜行戰役中獲勝</div>
+      <div>2. 焦熱地獄攻略層數243層
+      <div>3. 白兔累計所持數量超過30,000隻
+    </div>
+  </div>
+</div>
