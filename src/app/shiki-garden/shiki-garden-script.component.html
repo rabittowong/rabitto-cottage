@@ -33,67 +33,70 @@
   <div class="content">
     <div class="content-header">更新記錄</div>
     <div class="content-body">
-      <div>3.20</div>
-      <div>- 新增討伐活動地圖功能</div>
-      <div>- 修訂基本符位置</div>
-    </div>
-    <div class="content-body">
-      <span class="pointer" (click)="isRecordHidden = !isRecordHidden">[點我查看以往更新記綠]</span>
-    </div>
+      <div class="section">
+        <div>3.20</div>
+        <div>- 新增討伐活動地圖功能</div>
+        <div>- 修訂基本符位置</div>
+      </div>
 
-    <div *ngIf="!isRecordHidden">
-      <div class="content-body">
-        <div>3.19</div>
-        <div>- 優化整體腳本</div>
-        <div>- HP改為自動檢查</div>
-        <div>- 新增檢測討伐地已達回數上限功能</div>
-        <div>- 修復買基本符時有可能卡住的問題</div>
-        <div>- 修復經驗筆事件的判定問題</div>
+      <div class="section">
+        <span class="pointer" (click)="isRecordHidden = !isRecordHidden">[點我查看以往更新記綠]</span>
       </div>
-      <div class="content-body">
-        <div>3.18</div>
-        <div>- 優化買基本符程序</div>
-        <div>- 取消選擇討伐隊功能</div>
-      </div>
-      <div class="content-body">
-        <div>3.17</div>
-        <div>- 優化買基本符程序</div>
-        <div>- 修復文過高時無法賣卡的問題</div>
-        <div>- 新增換領活動物品功能</div>
-      </div>
-      <div class="content-body">
-        <div>3.16</div>
-        <div>- 修正AP能設定成60%以上的錯誤</div>
-        <div>- 新增刷經驗筆功能</div>
-      </div>
-      <div class="content-body">
-        <div>3.15</div>
-        <div>- 修復會在連續登入獎勵卡住的問題</div>
-        <div>- 新增圖5地圖</div>
-        <div>- 新增討伐後再挑戰功能</div>
-      </div>
-      <div class="content-body">
-        <div>3.14</div>
-        <div>- 修復選擇隊伍時重設難度的問題</div>
-        <div>- 修復遇到亂入怪時無法返回庭園的問題</div>
-        <div>- 降低防卡檢查的觸發時間</div>
-      </div>
-      <div class="content-body">
-        <div>3.13</div>
-        <div>- 修復買卡後無法返回庭園的問題</div>
-        <div>- 修復防卡檢查時無法關閉雜貨屋的問題</div>
-      </div>
-      <div class="content-body">
-        <div>3.12</div>
-        <div>- 改善腳本防卡設置</div>
-        <div>- 修復無法進入曜日討伐地的問題</div>
-        <div>- 修復無法選擇地圖的問題</div>
-        <div>- 修復無法選擇隊伍的問題</div>
-      </div>
-      <div class="content-body">
-        <div>3.11</div>
-        <div>- 優化整體腳本</div>
-        <div>- 新增黃泉平坂地圖(1-20F)</div>
+
+      <div *ngIf="!isRecordHidden">
+        <div class="section">
+          <div>3.19</div>
+          <div>- 優化整體腳本</div>
+          <div>- HP改為自動檢查</div>
+          <div>- 新增檢測討伐地已達回數上限功能</div>
+          <div>- 修復買基本符時有可能卡住的問題</div>
+          <div>- 修復經驗筆事件的判定問題</div>
+        </div>
+        <div class="section">
+          <div>3.18</div>
+          <div>- 優化買基本符程序</div>
+          <div>- 取消選擇討伐隊功能</div>
+        </div>
+        <div class="section">
+          <div>3.17</div>
+          <div>- 優化買基本符程序</div>
+          <div>- 修復文過高時無法賣卡的問題</div>
+          <div>- 新增換領活動物品功能</div>
+        </div>
+        <div class="section">
+          <div>3.16</div>
+          <div>- 修正AP能設定成60%以上的錯誤</div>
+          <div>- 新增刷經驗筆功能</div>
+        </div>
+        <div class="section">
+          <div>3.15</div>
+          <div>- 修復會在連續登入獎勵卡住的問題</div>
+          <div>- 新增圖5地圖</div>
+          <div>- 新增討伐後再挑戰功能</div>
+        </div>
+        <div class="section">
+          <div>3.14</div>
+          <div>- 修復選擇隊伍時重設難度的問題</div>
+          <div>- 修復遇到亂入怪時無法返回庭園的問題</div>
+          <div>- 降低防卡檢查的觸發時間</div>
+        </div>
+        <div class="section">
+          <div>3.13</div>
+          <div>- 修復買卡後無法返回庭園的問題</div>
+          <div>- 修復防卡檢查時無法關閉雜貨屋的問題</div>
+        </div>
+        <div class="section">
+          <div>3.12</div>
+          <div>- 改善腳本防卡設置</div>
+          <div>- 修復無法進入曜日討伐地的問題</div>
+          <div>- 修復無法選擇地圖的問題</div>
+          <div>- 修復無法選擇隊伍的問題</div>
+        </div>
+        <div class="section">
+          <div>3.11</div>
+          <div>- 優化整體腳本</div>
+          <div>- 新增黃泉平坂地圖(1-20F)</div>
+        </div>
       </div>
     </div>
   </div>
