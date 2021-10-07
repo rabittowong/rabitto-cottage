@@ -1,27 +1,32 @@
 # RabittoCottage
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.3.
+This project was written by Rabitto Wong as first personal website. It was originally hosted on Neocities and moved to
+Firebase in 2021.
+
+Production version of the project can be found on `https://rabitto-cottage.firebaseapp.com/`. It was generated
+with [Angular CLI](https://github.com/angular/angular-cli)
+version 9.0.3.
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `git clone` to clone the project to local environment. Run `npm install` to install the project dependencies.
+Run `npm run start` to start a development server.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Run `npm run build` for a production build. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+## Deploy
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run `firebase deploy` after production build to publish the change to production environment. Firebase hosting server
+will reload the website and apply the changes after a few minutes.
 
-## Running end-to-end tests
+## Recent update
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- 2016-11-30 Initialize project development with pure HTML and Javascript 
+- 2016-12-06 Host on Neocities 
+- 2020-11-10 Terminate Neocities service 
+- 2021-10-02 Revamp project with Angular framework 
+- 2021-10-08 Host on Firebase
