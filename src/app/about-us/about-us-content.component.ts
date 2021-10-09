@@ -1,15 +1,19 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
-import { shikiData } from '../data/shiki.data';
 import { ShikiModel } from '../model/shiki.model';
 
 @Component({
   templateUrl: './about-us-content.component.html',
   styleUrls: ['./about-us-content.component.scss'],
 })
-export class AboutUsContentComponent {
-  shikis: ShikiModel[] = shikiData;
+export class AboutUsContentComponent implements OnInit {
+  shikis!: ShikiModel[];
 
-  constructor() {
+  constructor(private activatedRoute: ActivatedRoute) {
+  }
+
+  ngOnInit(): void {
+    this.shikis = this.activatedRoute.snapshot.data['shikis'] || [];
   }
 }

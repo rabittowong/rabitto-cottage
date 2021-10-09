@@ -1,19 +1,19 @@
-import { AfterViewInit, Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 import { IngredientModel } from '../model/ingredient.model';
-import { ingredientData } from '../data/ingredient.data';
 import { dialogData } from '../data/dialog.data';
 
 @Component({
   templateUrl: './ingredient-content.component.html',
   styleUrls: ['./ingredient-content.component.scss'],
 })
-export class IngredientContentComponent implements AfterViewInit {
-  ingredients: IngredientModel[] = ingredientData;
+export class IngredientContentComponent implements OnInit, AfterViewInit {
+  ingredients!: IngredientModel[];
   dialogs: string[] = dialogData;
 
-  constructor(private router: Router) {
+  constructor(private activatedRoute: ActivatedRoute,
+              private router: Router) {
   }
 
   getRandomItemInArray<T>(array: T[]): T {
@@ -24,5 +24,9 @@ export class IngredientContentComponent implements AfterViewInit {
   ngAfterViewInit(): void {
     alert(this.getRandomItemInArray(this.dialogs));
     this.router.navigate(['/']);
+  }
+
+  ngOnInit(): void {
+    this.ingredients = this.activatedRoute.snapshot.data['ingredients'] || [];
   }
 }

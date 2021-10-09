@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
 import { CharacterModel } from '../model/character.model';
-import { characterData } from '../data/character.data';
 import { rankData } from '../data/rank.data';
+import { CharacterService } from '../service/character.service';
 
 @Component({
   templateUrl: './shiki-garden-character.component.html',
@@ -12,11 +12,13 @@ export class ShikiGardenCharacterComponent implements OnInit {
   ranks: string[] = rankData;
   characters: CharacterModel[] = [];
 
-  constructor() {
+  constructor(private characterService: CharacterService) {
   }
 
   onSelectRank(rank: string): void {
-    this.characters = characterData.filter(c => c.rank == rank);
+    this.characterService.findByRank(rank).subscribe(res => {
+      this.characters = res.sort((a, b) => a.order - b.order);
+    });
   }
 
   ngOnInit(): void {

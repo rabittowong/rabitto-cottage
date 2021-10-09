@@ -23,7 +23,7 @@
       <div *ngFor="let character of characters; let i = index" class="character">
         <div class="name">{{character.name}}</div>
         <div class="emotion-container">
-          <img *ngFor="let emotion of character.emotions; let j = index" src="https://www.shikihime-project.com{{emotion}}" alt="character-{{i}}-{{j}}">
+          <img *ngFor="let emotionLink of character.emotionLinks; let j = index" src="{{emotionLink}}" alt="character-{{i}}-{{j}}">
         </div>
       </div>
     </div>

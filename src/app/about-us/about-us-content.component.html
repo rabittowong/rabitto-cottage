@@ -14,7 +14,7 @@
       <div *ngFor="let shiki of shikis; let i = index" class="section">
         <div>{{shiki.name}} (種族: {{shiki.race}})</div>
         <div class="grid">
-          <img class="avatar" src="assets/img/{{shiki.avatar}}" alt="rabitto-shiki-{{i}}">
+          <img class="avatar" src="{{shiki.avatarLink}}" alt="rabitto-shiki-{{i}}">
           <div class="detail-container">
             <table class="detail">
               <tr>
@@ -33,10 +33,10 @@
               </tr>
             </table>
             <div>
-              <div class="skill">{{shiki.skill1}}</div>
-              <div class="skill-remark">{{shiki.skill1Remark}}</div>
-              <div class="skill">{{shiki.skill2}}</div>
-              <div class="skill-remark">{{shiki.skill2Remark}}</div>
+              <div class="skill">{{shiki.firstSkill}}</div>
+              <div class="skill-remark">{{shiki.firstSkillRemark}}</div>
+              <div class="skill">{{shiki.secondSkill}}</div>
+              <div class="skill-remark">{{shiki.secondSkillRemark}}</div>
             </div>
           </div>
         </div>
