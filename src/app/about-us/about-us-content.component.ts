@@ -14,6 +14,7 @@ export class AboutUsContentComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.shikis = this.activatedRoute.snapshot.data['shikis'] || [];
+    const shikiData = (this.activatedRoute.snapshot.data['shikis'] as ShikiModel[]) || [];
+    this.shikis = shikiData.sort((a, b) => a.order - b.order);
   }
 }

@@ -27,6 +27,7 @@ export class IngredientContentComponent implements OnInit, AfterViewInit {
   }
 
   ngOnInit(): void {
-    this.ingredients = this.activatedRoute.snapshot.data['ingredients'] || [];
+    const ingredientData = (this.activatedRoute.snapshot.data['ingredients'] as IngredientModel[]) || [];
+    this.ingredients = ingredientData.sort((a, b) => a.order - b.order);
   }
 }
