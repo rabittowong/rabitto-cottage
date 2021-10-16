@@ -8,7 +8,7 @@ import { ShikiModel } from '../model/shiki.model';
   styleUrls: ['./about-us-content.component.scss'],
 })
 export class AboutUsContentComponent implements OnInit {
-  shikis!: ShikiModel[];
+  shikis: ShikiModel[];
 
   constructor(private activatedRoute: ActivatedRoute) {
   }

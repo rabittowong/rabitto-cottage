@@ -7,8 +7,8 @@ import { AfterViewInit, Component, ElementRef, Input, ViewChild, ViewEncapsulati
   encapsulation: ViewEncapsulation.None,
 })
 export class GistContentComponent implements AfterViewInit {
-  @ViewChild('iframe') iframe!: ElementRef;
-  @Input() gistId!: string;
+  @ViewChild('iframe') iframe: ElementRef;
+  @Input() gistId: string;
 
   constructor() {
   }

@@ -9,7 +9,7 @@ import { dialogData } from '../data/dialog.data';
   styleUrls: ['./ingredient-content.component.scss'],
 })
 export class IngredientContentComponent implements OnInit, AfterViewInit {
-  ingredients!: IngredientModel[];
+  ingredients: IngredientModel[];
   dialogs: string[] = dialogData;
 
   constructor(private activatedRoute: ActivatedRoute,
