@@ -1,9 +1,9 @@
-# RabittoCottage
+# Rabitto Cottage
 
 This project was written by Rabitto Wong. It was generated with [Angular CLI](https://github.com/angular/angular-cli)
-version 12.1.3. Production link of the project can be viewed on `https://rabitto-cottage.firebaseapp.com/`.
+version 12.1.3.
 
-## Development server
+## Development Server
 
 Run `git clone` to clone the project to local environment. Run `npm install` to install the project dependencies.
 Run `ng run start` to start a development server.
